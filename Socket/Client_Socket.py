@@ -1,6 +1,6 @@
 import socket
 s=socket.socket()
-s.connect(("172.18.8.245",1234))
+s.connect(("127.0.0.1",1234))
 print("Connected.....")
 
 while(True):

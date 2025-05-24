@@ -1,7 +1,7 @@
 import socket
 
 s=socket.socket()
-s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1) # Use to reuse the same port for quick reuse of server
+
 s.bind(('',1234))
 s.listen(5)
 print('Socket is listening.....')
@@ -14,4 +14,5 @@ while(True):
     if(msg=="exit" or n=="exit"):
         break
     print('$ '+msg)
+
 c.close()
